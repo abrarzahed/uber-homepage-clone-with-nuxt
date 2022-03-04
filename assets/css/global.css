@@ -1,0 +1,44 @@
+.capitalize-btn {
+  text-transform: capitalize !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  letter-spacing: 0 !important;
+}
+.tab,
+.tab * {
+  margin: 0;
+}
+.tab h3 {
+  line-height: 1.2 !important;
+}
+.tab .button-link-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+p {
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  margin: 0;
+  padding: 0;
+}
+.section-title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 44px;
+}
