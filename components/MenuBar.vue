@@ -40,7 +40,13 @@
       >
     </div>
     <div class="menu-items-right">
-      <v-btn small depressed dark rounded class="capitalize-btn"
+      <v-btn
+        @click="openDialog"
+        small
+        depressed
+        dark
+        rounded
+        class="capitalize-btn"
         ><v-icon left>mdi-web</v-icon>EN</v-btn
       >
       <v-menu
@@ -86,10 +92,17 @@
           <!-- ---------------------------------------- -->
         </v-list>
       </v-menu>
-      <v-btn depressed small dark rounded class="capitalize-btn ml-2"
+      <v-btn
+        @click="openLoginDialog"
+        depressed
+        small
+        dark
+        rounded
+        class="capitalize-btn ml-2"
         ><v-icon left>mdi-account</v-icon>Log in</v-btn
       >
       <v-btn
+        @click="openLoginDialog"
         depressed
         dark
         color="#fff"
@@ -131,6 +144,14 @@ export default {
       { title: "Money", icon: "mdi-cash" },
     ],
   }),
+  methods: {
+    openDialog() {
+      this.$emit("openDialog");
+    },
+    openLoginDialog() {
+      this.$emit("openLoginDialog");
+    },
+  },
 };
 </script>
 <style>

@@ -5,6 +5,10 @@
   font-size: 15px !important;
   letter-spacing: 0 !important;
 }
+.capitalize-btn.large-btn {
+  font-size: 20px !important;
+  padding: 30px 100px !important;
+}
 .tab,
 .tab * {
   margin: 0;
