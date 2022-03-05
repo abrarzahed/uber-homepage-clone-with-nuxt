@@ -95,4 +95,35 @@ export default {};
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 500px) {
+  .footer {
+    padding: 30px 0 20px;
+  }
+  .footer .top-part {
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-social {
+    flex-direction: column;
+  }
+  .footer-social img {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .footer-icons {
+    flex-basis: 100%;
+    display: flex;
+    /* padding: 20px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .footer-app-icons {
+    flex-basis: 100%;
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+}
 </style>

@@ -65,4 +65,19 @@ export default {};
     opacity: 1;
   }
 }
+@media (max-width: 900px) {
+  .cta-container {
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .cta-container h2 {
+    font-size: 26px;
+  }
+  .cta-drive.cta-item.outer {
+    display: none;
+  }
+}
 </style>

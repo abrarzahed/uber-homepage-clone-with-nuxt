@@ -82,4 +82,18 @@ export default {
   display: flex;
   gap: 30px;
 }
+@media (max-width: 900px) {
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: stretch;
+  }
+}
+@media (max-width: 500px) {
+  .feature-section-link-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 </style>

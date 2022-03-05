@@ -20,7 +20,7 @@ export default {
 
 <style>
 a.animated-link {
-  color: inherit;
+  color: #444;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;

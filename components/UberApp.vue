@@ -57,4 +57,21 @@ export default {};
 .app-add-card h3:hover span {
   margin-left: 10px;
 }
+@media (max-width: 900px) {
+  .app-add-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .app-add-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 30px;
+    background: #fff;
+    flex-basis: 50%;
+    border: 1px solid #ddd;
+    flex-direction: column;
+  }
+}
 </style>

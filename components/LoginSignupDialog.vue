@@ -17,7 +17,7 @@
               </span>
             </div>
           </div>
-          <div class="cta-drive cta-item">
+          <div class="cta-drive cta-item outer">
             <h2>Sign in to order delivery with Uber Eats</h2>
             <span>
               <v-icon color="#000" size="50">mdi-arrow-right</v-icon>

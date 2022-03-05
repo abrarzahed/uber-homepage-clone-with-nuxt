@@ -1,12 +1,12 @@
 <template>
   <div class="hero-wrapper">
-    <div class="hero-section" :class="activeTab"></div>
     <v-container>
       <div class="hero-section-content">
         <div class="hero-section-content-header" :class="activeTab">
           <div
             @click="handleActiveTab('drive')"
             class="hero-section-content-header-tab"
+            :class="{ active: activeTab == 'drive' }"
           >
             <v-icon large color="#000">mdi-network-strength-3</v-icon>
             <span
@@ -17,6 +17,7 @@
           <div
             @click="handleActiveTab('food')"
             class="hero-section-content-header-tab"
+            :class="{ active: activeTab == 'food' }"
           >
             <v-icon large color="#000">mdi-food-fork-drink</v-icon>
             <span>Eat</span>
@@ -24,6 +25,7 @@
           <div
             @click="handleActiveTab('ride')"
             class="hero-section-content-header-tab"
+            :class="{ active: activeTab == 'ride' }"
           >
             <v-icon large color="#000">mdi-car</v-icon>
             <span>Ride</span>
@@ -36,6 +38,7 @@
         </div>
       </div>
     </v-container>
+    <div class="hero-section" :class="activeTab"></div>
   </div>
 </template>
 
@@ -58,6 +61,7 @@ export default {
 .hero-wrapper {
   position: relative;
   overflow: hidden;
+  margin-top: -30px;
 }
 .hero-section {
   overflow: hidden;
@@ -103,10 +107,10 @@ export default {
   transition: transform 0.2s ease;
 }
 .hero-section-content-header.drive::before {
-  transform: translateX(40px);
+  transform: translateX(50px);
 }
 .hero-section-content-header.food::before {
-  transform: translateX(230px);
+  transform: translateX(250px);
 }
 .hero-section-content-header.ride::before {
   transform: translateX(410px);
@@ -124,5 +128,60 @@ export default {
 }
 .hero-section-content-tab-item {
   padding: 50px;
+}
+@media (max-width: 900px) {
+  .hero-section-content {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+  .hero-section {
+    min-height: 420px;
+  }
+  .hero-section-content-header {
+    padding: 30px;
+    justify-content: space-between;
+  }
+  .hero-section-content-tab-item {
+    padding: 30px;
+  }
+  .hero-section-content-header.drive::before {
+    transform: translateX(15px);
+  }
+  .hero-section-content-header.food::before {
+    transform: translateX(330px);
+  }
+  .hero-section-content-header.ride::before {
+    transform: translateX(800%);
+  }
+}
+@media (max-width: 600px) {
+  .hero-wrapper {
+    margin-top: 0px;
+  }
+  .hero-section-content {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+  .hero-section {
+    min-height: 380px;
+  }
+  .hero-section-content-header {
+    gap: 0;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .hero-section-content-tab-item {
+    padding: 20px 0px;
+  }
+  .hero-section-content-header::before {
+    display: none;
+  }
+  .hero-section-content-header-tab.active span {
+    color: #03235d;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+  }
 }
 </style>

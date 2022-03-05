@@ -59,4 +59,11 @@ export default {
   font-size: 19px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .featured-cards {
+    margin-top: 100px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 </style>
