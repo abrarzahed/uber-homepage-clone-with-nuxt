@@ -35,7 +35,7 @@
         <template v-slot:activator>
           <v-list-item-content>
             <v-list-item-title class="font-weight-medium"
-              >productsLinks</v-list-item-title
+              >Products</v-list-item-title
             >
           </v-list-item-content>
         </template>
